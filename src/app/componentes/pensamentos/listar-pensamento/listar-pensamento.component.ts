@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-listar-pensamento',
@@ -6,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listar-pensamento.component.css']
 })
 export class ListarPensamentoComponent implements OnInit {
+
+  listaPensamentos = [{
+    conteudo: 'I love Angular',
+    autoria: 'Manoel',
+    modelo: 'modelo3'
+  },
+  {
+    conteudo: 'I love Angular',
+    autoria: 'Manoel',
+    modelo: 'modelo3'
+  }]
 
   constructor() { }
 
